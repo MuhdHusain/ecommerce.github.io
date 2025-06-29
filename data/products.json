@@ -1,7 +1,7 @@
 [
   {
     "id": "pen",
-    "name": "Blue Pen",
+    "name": "Black Pen",
     "price": 2.00,
     "desc": "Smooth ink pen for daily writing.",
     "category": "pens",
@@ -19,7 +19,7 @@
     "id": "ruler",
     "name": "Ruler",
     "price": 1.50,
-    "desc": "30 cm transparent ruler.",
+    "desc": "15 cm transparent ruler.",
     "category": "accessories",
     "image": "img/ruler.jpg"
   }
