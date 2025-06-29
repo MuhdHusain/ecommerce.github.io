@@ -35,6 +35,61 @@ header nav a:hover {
   text-decoration: underline;
 }
 
+/* ⭐ HERO SECTION */
+.hero {
+  background: url('img/hero.jpg') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top:0; left:0; right:0; bottom:0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.cta-btn {
+  background: #f7931e;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #e68200;
+}
+
+/* 🎉 PROMOTION BANNER */
+.promo-banner {
+  background: #f7931e;
+  color: #fff;
+  text-align: center;
+  padding: 12px 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
 /* Main container */
 main {
   max-width: 1200px;
@@ -195,6 +250,10 @@ footer {
   header nav {
     margin-top: 15px;
   }
+
+  html {
+  scroll-behavior: smooth;
+}
 
   .product-grid {
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
