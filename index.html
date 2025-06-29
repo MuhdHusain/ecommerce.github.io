@@ -1,6 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Husin's Shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
+
+  <!-- HEADER -->
   <header>
-    <img src="img/logo.png" class="logo" alt="Husin's Shop">
+    <img src="img/logo.png" class="logo" alt="Husin's Shop Logo" />
     <nav>
       <a href="index.html">Home</a>
       <a href="cart.html">Cart 🛒</a>
@@ -22,6 +32,7 @@
     <p>🔥 Back to School Sale: Up to 30% Off! Limited Time Only! 🔥</p>
   </section>
 
+  <!-- MAIN CONTENT -->
   <main>
     <h2>Categories:</h2>
     <button onclick="filterCategory('all')">All</button>
@@ -33,14 +44,17 @@
     <div id="product-grid" class="product-grid"></div>
   </main>
 
+  <!-- FOOTER -->
   <footer>
     © 2025 Husin's Shop. All rights reserved.
   </footer>
 
+  <!-- SCRIPTS -->
   <script src="script.js"></script>
   <script>
     loadProducts();
     checkLogin();
   </script>
-</body>
 
+</body>
+</html>
