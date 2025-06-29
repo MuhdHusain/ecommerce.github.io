@@ -1,0 +1,26 @@
+[
+  {
+    "id": "pen",
+    "name": "Blue Pen",
+    "price": 2.00,
+    "desc": "Smooth ink pen for daily writing.",
+    "category": "pens",
+    "image": "img/pen.jpg"
+  },
+  {
+    "id": "notebook",
+    "name": "Notebook",
+    "price": 5.00,
+    "desc": "80 pages ruled notebook.",
+    "category": "notebooks",
+    "image": "img/notebook.jpg"
+  },
+  {
+    "id": "ruler",
+    "name": "Ruler",
+    "price": 1.50,
+    "desc": "30 cm transparent ruler.",
+    "category": "accessories",
+    "image": "img/ruler.jpg"
+  }
+]
