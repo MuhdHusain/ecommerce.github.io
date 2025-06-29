@@ -22,5 +22,30 @@
     "desc": "15 cm transparent ruler.",
     "category": "accessories",
     "image": "img/ruler.jpg"
+  },
+  {
+    "id": "scissors",
+    "name": "Scissors",
+    "price": 3.50,
+    "desc": "Durable stainless steel scissors.",
+    "category": "accessories",
+    "image": "img/scissors.jpg"
+  },
+  {
+    "id": "glue",
+    "name": "Glue",
+    "price": 2.80,
+    "desc": "Strong adhesive glue stick.",
+    "category": "accessories",
+    "image": "img/glue.jpg"
+  },
+  {
+    "id": "correction",
+    "name": "Correction Tape",
+    "price": 2.20,
+    "desc": "Quick-dry correction tape for neat fixes.",
+    "category": "accessories",
+    "image": "img/correction.jpg"
   }
 ]
+
