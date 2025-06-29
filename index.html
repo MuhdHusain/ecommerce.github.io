@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Husin's Shop</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
 <body>
   <header>
     <img src="img/logo.png" class="logo" alt="Husin's Shop">
@@ -15,8 +8,21 @@
     </nav>
   </header>
 
+  <!-- ⭐ HERO SECTION -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Welcome to Husin's Shop</h1>
+      <p>Your one-stop shop for all school stationery needs!</p>
+      <a href="#product-grid" class="cta-btn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- 🎉 PROMOTION BANNER -->
+  <section class="promo-banner">
+    <p>🔥 Back to School Sale: Up to 30% Off! Limited Time Only! 🔥</p>
+  </section>
+
   <main>
-    <h1>Welcome, <span id="username">Guest</span>!</h1>
     <h2>Categories:</h2>
     <button onclick="filterCategory('all')">All</button>
     <button onclick="filterCategory('pens')">Pens</button>
@@ -27,10 +33,14 @@
     <div id="product-grid" class="product-grid"></div>
   </main>
 
+  <footer>
+    © 2025 Husin's Shop. All rights reserved.
+  </footer>
+
   <script src="script.js"></script>
   <script>
     loadProducts();
     checkLogin();
   </script>
 </body>
-</html>
+
