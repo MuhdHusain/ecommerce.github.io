@@ -9,6 +9,10 @@ body {
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Header */
 header {
   background: #0077cc;
@@ -251,11 +255,15 @@ footer {
     margin-top: 15px;
   }
 
-  html {
-  scroll-behavior: smooth;
-}
-
   .product-grid {
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 18px;
   }
 }
