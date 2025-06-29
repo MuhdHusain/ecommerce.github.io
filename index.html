@@ -2,45 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Husin’s Stationery Shop</title>
+  <title>Husin's Shop</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <img src="img/logo.png" alt="Logo" class="logo">
-    <h1>Husin’s Stationery Shop</h1>
+    <img src="img/logo.png" class="logo" alt="Husin's Shop">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cart.html">Cart 🛒</a>
+      <a href="login.html" id="user-link">Login</a>
+    </nav>
   </header>
 
   <main>
-    <h2>Our Products</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="img/pen.png" alt="Pen">
-        <h3>Black Pen</h3>
-        <p>RM 2.00</p>
-        <button onclick="addToCart('pen', 'Blue Pen', 2)">Add to Cart</button>
-      </div>
+    <h1>Welcome, <span id="username">Guest</span>!</h1>
+    <h2>Categories:</h2>
+    <button onclick="filterCategory('all')">All</button>
+    <button onclick="filterCategory('pens')">Pens</button>
+    <button onclick="filterCategory('notebooks')">Notebooks</button>
+    <button onclick="filterCategory('accessories')">Accessories</button>
 
-      <div class="product-card">
-        <img src="img/notebook.jpg" alt="Notebook">
-        <h3>Notebook</h3>
-        <p>RM 5.00</p>
-        <button onclick="addToCart('notebook', 'Notebook', 5)">Add to Cart</button>
-      </div>
-
-      <div class="product-card">
-        <img src="img/ruler.png" alt="Ruler">
-        <h3>Ruler</h3>
-        <p>RM 1.50</p>
-        <button onclick="addToCart('ruler', 'Ruler', 1.5)">Add to Cart</button>
-      </div>
-    </div>
+    <h2>Products</h2>
+    <div id="product-grid" class="product-grid"></div>
   </main>
 
-  <footer>
-    <a href="cart.html">View Cart 🛒</a>
-  </footer>
-
   <script src="script.js"></script>
+  <script>
+    loadProducts();
+    checkLogin();
+  </script>
 </body>
 </html>
